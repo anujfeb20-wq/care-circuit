@@ -76,13 +76,13 @@ export default function HospitalServicesPage() {
               placeholder="Service name"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="rounded-lg border border-slate-200 px-3 py-2"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
               required
             />
             <select
               value={form.category}
               onChange={(e) => setForm({ ...form, category: e.target.value as ServiceCategory })}
-              className="rounded-lg border border-slate-200 px-3 py-2"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
             >
               {(Object.keys(CATEGORY_LABELS) as ServiceCategory[]).map((c) => (
                 <option key={c} value={c}>{CATEGORY_LABELS[c]}</option>
@@ -93,7 +93,7 @@ export default function HospitalServicesPage() {
               placeholder="Price (INR)"
               value={form.price}
               onChange={(e) => setForm({ ...form, price: e.target.value })}
-              className="rounded-lg border border-slate-200 px-3 py-2"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
               required
             />
             <input
@@ -101,14 +101,14 @@ export default function HospitalServicesPage() {
               placeholder="Discount % (optional)"
               value={form.discountPercent}
               onChange={(e) => setForm({ ...form, discountPercent: e.target.value })}
-              className="rounded-lg border border-slate-200 px-3 py-2"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
             />
             <input
               type="number"
               placeholder="Duration (days)"
               value={form.durationDays}
               onChange={(e) => setForm({ ...form, durationDays: e.target.value })}
-              className="rounded-lg border border-slate-200 px-3 py-2"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
               required
             />
             <label className="flex items-center gap-2 text-sm">
@@ -125,7 +125,7 @@ export default function HospitalServicesPage() {
             value={form.description}
             onChange={(e) => setForm({ ...form, description: e.target.value })}
             rows={3}
-            className="w-full rounded-lg border border-slate-200 px-3 py-2"
+            className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900"
             required
           />
           <button type="submit" className="rounded-lg bg-teal-600 px-4 py-2 text-white hover:bg-teal-700">
